@@ -327,9 +327,73 @@ using namespace std;
 //     }
 // }
 
+//1
+//121
+//12321
+//1234321
+//123454321
+//int main() {
+//    int n, i, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i=0; i<n; i++) {
+//        for (j=0; j<i+1; j++) {
+//            cout << j + 1;
+//        }
+//        for (j=i; j>0; j--) {
+//            cout << j ;
+//        }
+//        cout << "\n";
+//    }
+//}
+
+//1
+//232
+//34543
+//4567654
+//567898765
+//int main() {
+//    int n, i, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i = 0; i < n; i++) {
+//        for (j = n - i - 1; j > 0; j--) {
+//            cout << " ";
+//        }
+//        for (j = i + 1; j <= ((2 * i) + 1); j++) {
+//            cout << j;
+//        }
+//        for (j = ((2 * i)); j >= i + 1; j--) {
+//            cout << j;
+//        }
+//        cout << "\n";
+//    }
+//}
+
+//    1
+//   1 2
+//  1   3
+// 1     4
+//1 2 3 4 5
 int main() {
     int n, i, j;
     cout << "Enter the value of n: ";
     cin >> n;
-    for (i)
+    for (i = 0; i < n; i++) {
+        for (j = n - i - 1; j > 0; j--) {
+            cout << " ";
+        }
+        if (i == 0 || i == n - 1) {
+            for (j = 0; j < i + 1; j++) {
+                cout << j + 1 << " ";
+            }
+        } else {
+            cout << "1";
+            for (j = 0; j < ((2 * i) - 1); j += 1) {
+                cout << " ";
+            }
+            cout << i + 1;
+        }
+        cout << "\n";
+    }
 }
