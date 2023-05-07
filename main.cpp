@@ -375,25 +375,168 @@ using namespace std;
 //  1   3
 // 1     4
 //1 2 3 4 5
+//int main() {
+//    int n, i, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i = 0; i < n; i++) {
+//        for (j = n - i - 1; j > 0; j--) {
+//            cout << " ";
+//        }
+//        if (i == 0 || i == n - 1) {
+//            for (j = 0; j < i + 1; j++) {
+//                cout << j + 1 << " ";
+//            }
+//        } else {
+//            cout << "1";
+//            for (j = 0; j < ((2 * i) - 1); j += 1) {
+//                cout << " ";
+//            }
+//            cout << i + 1;
+//        }
+//        cout << "\n";
+//    }
+//}
+
+// Numeric Hollow Half Pyramid
+//1
+//1 2
+//1   3
+//1     4
+//1 2 3 4 5
+//int main() {
+//    int n, i, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i=0; i<n; i++) {
+//        if (i==0 or i==(n-1)) {
+//            for (j=0; j<=i; j++) {
+//                cout << j+1 << " ";
+//            }
+//        }
+//        else {
+//            cout << 1;
+//            for (j=0; j<((2*i)-1); j++) {
+//                cout << " ";
+//            }
+//            cout << i+1;
+//
+//        }
+//        cout << "\n";
+//    }
+//}
+
+// Numeric Hollow Half Pyramid
+//1 2 3 4 5
+//2     5
+//3   5
+//4 5
+//5
+//int main() {
+//    int n, i, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i=0; i<n; i++) {
+//        if (i==0 || i==n-1) {
+//            for (j=i; j<n; j++) {
+//                cout << j+1 << " ";
+//            }
+//        }
+//        else {
+//            cout << i+1;
+//            for (j=0; j<(2*(n-i-1))-1; j++) {
+//                cout << " ";
+//            }
+//            cout << n;
+//        }
+//        cout << "\n";
+//    }
+//}
+
+// Numeric Palindrome Equilateral Pyramid
+//int main() {
+//    int n, i, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i=0; i<n; i++) {
+//        for (j=0; j<((2*(n-i-1))); j++) {
+//            cout << " ";
+//        }
+//        for (j=0; j<i+1; j++) {
+//            cout << j+1 << " ";
+//        }
+//        for (j=i+1; j>1; j--) {
+//            cout << j-1 << " ";
+//        }
+//        cout << "\n";
+//    }
+//}
+
+// Solid Half Diamond
+//*
+//**
+//***
+//****
+//*****
+//****
+//***
+//**
+//*
+//int main() {
+//    int n, i, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i=0; i<((2*n)-1); i++) {
+//        if (i<n && i>=0) {
+//            for (j=0; j<=i; j++) {
+//                cout << "*";
+//            }
+//        }
+//        else {
+//            for (j=0; j<n-(i%5)-1; j++) {
+//                cout << "*";
+//            }
+//        }
+//        cout << "\n";
+//    }
+//}
+
+// Fancy Pattern #1
+//********1********
+//*******2*2*******
+//******3*3*3******
+//*****4*4*4*4*****
+//****5*5*5*5*5****
+//***6*6*6*6*6*6***
+//**7*7*7*7*7*7*7**
+//*8*8*8*8*8*8*8*8*
+//9*9*9*9*9*9*9*9*9
+//int main() {
+//    int i, n, j;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    for (i=0; i<n; i++) {
+//        for (j=0; j<9-i-1; j++) {
+//            cout << "*";
+//        }
+//        for (j=0; j<i+1; j++) {
+//            cout << i+1;
+//            if (i!=j) {
+//                cout << "*";
+//            }
+//        }
+//        for (j=0; j<9-i-1; j++) {
+//            cout << "*";
+//        }
+//        cout << "\n";
+//    }
+//}
+
 int main() {
-    int n, i, j;
+    int i, n, j;
     cout << "Enter the value of n: ";
     cin >> n;
-    for (i = 0; i < n; i++) {
-        for (j = n - i - 1; j > 0; j--) {
-            cout << " ";
-        }
-        if (i == 0 || i == n - 1) {
-            for (j = 0; j < i + 1; j++) {
-                cout << j + 1 << " ";
-            }
-        } else {
-            cout << "1";
-            for (j = 0; j < ((2 * i) - 1); j += 1) {
-                cout << " ";
-            }
-            cout << i + 1;
-        }
-        cout << "\n";
+    for(i=0; i<n; i++) {
+
     }
 }
